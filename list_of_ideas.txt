@@ -1,0 +1,13 @@
+
+1. piewrszy
+2. drugi
+3. trzevi
+4. czwarty
+5. piaty
+6. szosty
+7. siodmy
+8. ósmy
+9. dziewi¹ty
+10. cls
+11. jedenascie
+12. dwnaœcie
