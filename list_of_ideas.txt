@@ -11,3 +11,4 @@
 10. cls
 11. jedenascie
 12. dwnaœcie
+13. cls

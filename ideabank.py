@@ -1,4 +1,4 @@
-import os
+import sys
 filename = 'list_of_ideas.txt'
 
 
@@ -28,11 +28,13 @@ def add_idea():
         file.write('\n' + str(index) + '. ' + idea)
         index += 1
 
+
 def print_ideas():
     the_list = open_file()
     print("\nHere's the list of all ideas:")
     for line in the_list:
         print(line, end="")
+
 
 def main_menu():
     print('Welcome to the Idea Bank!')
@@ -42,5 +44,29 @@ def main_menu():
         print_ideas()
 
 
-if __name__ == '__main__':
-    main_menu()
+argv_command = -1
+if len(sys.argv) == 2:
+    argv_command = sys.argv[1]
+    if argv_command == '--list':
+        print_ideas()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# if __name__ == '__main__':
+#     main_menu()
