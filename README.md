@@ -29,25 +29,12 @@ helps you keep track of them.
     - Calling the program with the command line argument `--delete` and a number deletes the idea corresponding to the number and prints out the numbered list of ideas (e.g. `1. first idea`).
     - Not giving any arguments after the `--delete` argument prints out the error message `Specify a number after --delete`.
     - Giving non-number arguments after the `--delete` argument prints out the error message `Specify a number after --delete`.
-    - Other command line arguments are ignored.
-
-## General requirements
-
-None
-
-## Hints
-
-- Use a txt file to save data in order to have the ideas after restart as well.
-- For deleting an idea you probably want to use some data structure in your program :)
-- You can list your ideas with the `$ python3 ideabank.py --list` command in the terminal as well.
-- You can delete your ideas with the `$ python3 ideabank.py --delete 1`(the number represents the number of the idea) command in the terminal as well.
-
-
+    - Other command line e3eee
 ## Background materials
 
 - <i class="far fa-exclamation"></i> [Strings](project/curriculum/materials/competencies/python-basics/python-strings.md.html)
 - <i class="far fa-exclamation"></i> [Control structures](project/curriculum/materials/competencies/python-basics/python-control-structures.md.html)
 - <i class="far fa-exclamation"></i> [Functions](project/curriculum/materials/competencies/python-basics/python-functions.md.html)
-- <i class="far fa-exclamation"></i> [Tutorial about command line arguments in Python](https://www.pythonforbeginners.com/system/python-sys-argv)
-- <i class="far fa-exclamation"></i> [Error handling in Python](https://python-textbok.readthedocs.io/en/stable/Errors_and_Exceptions.html)
+- <i class="far fa-exclamation"></i> [Tutorial about command line arguments in Python](httpeees://www.pythonforbeginners.com/system/python-sys-argv)
+- <i class="far fa-exclamation"></i> [Error handling in Python](https://python-textbok.readthsdwedocs.io/en/stable/Errors_and_Exceptions.html)
 

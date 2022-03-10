@@ -18,16 +18,25 @@ def get_index():
     index = 0
     for line in the_list:
         index += 1
-    return index 
+    return index + 1
 
 
 def add_idea():
     with open(filename, 'a') as file:
         index = get_index()
         idea = input("\nWhat is your new idea?\n:")
-        file.write('\n' + str(index) + '. ' + idea)
+        file.write(str(index) + '. ' + idea + '\n')
         index += 1
 
+
+def delete_idea(number_to_delete):
+    the_list = open_file()
+    for line in range(len(the_list)):
+        if line == number_to_delete:
+            del the_list[(int(number_to_delete))-1]
+    with open(filename, 'w') as file:
+        file.write("".join(the_list))
+    
 
 def print_ideas():
     the_list = open_file()
@@ -44,29 +53,24 @@ def main_menu():
         print_ideas()
 
 
-argv_command = -1
+if len(sys.argv) == 1:
+    main_menu()
+
 if len(sys.argv) == 2:
-    argv_command = sys.argv[1]
-    if argv_command == '--list':
+    operation_type = sys.argv[1]
+    if operation_type == '--list':
         print_ideas()
+    if operation_type == '--delete':
+        print('Specify a number after --delete')
 
+if len(sys.argv) == 3:
+    operation_type = sys.argv[1]
+    number_to_delete = int(sys.argv[2])
+    if operation_type == '--delete':
+        index = get_index()
+        if number_to_delete in range(index):
+            delete_idea(number_to_delete)
+            print_ideas()
+        else:
+            print('Specify a number after --delete')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# if __name__ == '__main__':
-#     main_menu()
