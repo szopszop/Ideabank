@@ -1,7 +1,6 @@
-1. peirwsza
-2. druga
-5. piata
-6. szosta
-7. siodma
-8. osma
-9. dziewiata
+pierwsza
+druga
+trzecia
+cz
+piata
+cls

@@ -25,7 +25,7 @@ def add_idea():
     with open(filename, 'a') as file:
         index = get_index()
         idea = input("\nWhat is your new idea?\n:")
-        file.write(str(index) + '. ' + idea + '\n')
+        file.write(idea + '\n')
         index += 1
 
 
@@ -41,8 +41,9 @@ def delete_idea(number_to_delete):
 def print_ideas():
     the_list = open_file()
     print("\nHere's the list of all ideas:")
-    for line in the_list:
-        print(line, end="")
+    for number, line in enumerate(the_list):
+        print(f'{number + 1}. {line}', end='')
+
 
 
 def main_menu():
