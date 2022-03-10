@@ -16,7 +16,7 @@ def get_index():
     with open(filename) as file:
         the_list = file.readlines()
     index = 0
-    for line in the_list:
+    for idea in the_list:
         index += 1
     return index + 1
 
@@ -43,7 +43,6 @@ def print_ideas():
     print("\nHere's the list of all ideas:")
     for number, line in enumerate(the_list):
         print(f'{number + 1}. {line}', end='')
-
 
 
 def main_menu():
